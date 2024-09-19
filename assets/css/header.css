@@ -1,0 +1,111 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0px;
+}
+
+.h-logo {
+    width: 100px;
+}
+
+.h-button-dark-mode {
+    width: 33.992px;
+    height: 16.41px;
+    background: #E8E7E7;
+    border-radius: 9px;
+    padding: 1.17px 2px;
+    display: flex;
+    align-items: center;
+}
+
+.h-bdm-icon-container {
+    height: 14.066px;
+    width: 14.066px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #979797;
+    border-radius: 9999px;
+    padding: 1px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateRight 6s linear infinite;
+}
+
+.h-bdm-icon-container::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    border: 1px dashed #FF7070;
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    animation: rotateLeft 8s linear infinite;
+}
+
+.h-bdm-icon-container img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 60px 0px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        padding: 60px 0px;
+    }
+
+    .h-logo {
+        width: 140px;
+    }
+
+    .h-button-dark-mode {
+        width: 68px;
+        height: 32px;
+        border-radius: 45px;
+        padding: 3.17px 5px;
+    }
+
+    .h-bdm-icon-container {
+        width: 28px;
+        height: 28px;
+    }
+
+    .h-bdm-icon-container::after {
+        width: 48px;
+        height: 48px;
+        border: 2px dashed #FF7070;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    header {
+        padding: 74px 0px;
+    }
+
+    .h-logo {
+        width: 280px;
+    }
+
+    .h-button-dark-mode {
+        width: 84px;
+        height: 40px;
+        border-radius: 45px;
+        padding: 4px 8px;
+    }
+
+    .h-bdm-icon-container {
+        width: 34px;
+        height: 34px;
+    }
+
+    .h-bdm-icon-container::after {
+        width: 69px;
+        height: 69px;
+        border: 3px dashed #FF7070;
+    }
+}

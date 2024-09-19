@@ -1,0 +1,257 @@
+.works-examples {
+    height: 372px;
+    margin-top: 60px;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-chat-crm {
+    position: absolute;
+    left: 68px;
+    display: flex;
+    width: fit-content;
+}
+
+.img-chat-crm > img {
+    width: 160px;
+}
+
+.img-example-3 {
+    position: absolute;
+    right: 51px;
+    display: flex;
+    width: fit-content;
+}
+
+.img-example-3 > img {
+    width: 80px;
+}
+
+.img-example-2 {
+    position: absolute;
+    top: 76px;
+    right: -39px;
+    display: flex;
+    width: fit-content;
+}
+
+.img-example-2 > img {
+    width: 80px;
+}
+
+.img-example-4 {
+    position: absolute;
+    top: 76px;
+    left: -39px;
+    display: flex;
+    width: fit-content;
+}
+
+.img-example-4 > img {
+    width: 80px;
+}
+
+.img-example-1 {
+    position: absolute;
+    top: 208px;
+    left: 62px;
+    display: flex;
+    width: fit-content;
+}
+
+.img-example-1 > img {
+    width: 80px;
+}
+
+.img-dashboard {
+    position: absolute;
+    top: 258px;
+    right: -25px;
+    display: flex;
+    width: fit-content;
+}
+
+.img-dashboard > img {
+    width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .works-examples {
+        height: 629px;
+        margin-top: 150px;
+    }
+    
+    .img-chat-crm {
+        left: 138px;
+        top: 95px;
+    }
+    
+    .img-chat-crm > img {
+        width: 331px;
+    }
+    
+    .img-example-3 {
+        right: 132px;
+    }
+    
+    .img-example-3 > img {
+        width: 145px;
+    }
+    
+    .img-example-2 {
+        top: 226px;
+        right: -39px;
+    }
+    
+    .img-example-2 > img {
+        width: 145px;
+    }
+    
+    .img-example-4 {
+        top: 196px;
+        left: -39px;
+    }
+    
+    .img-example-4 > img {
+        width: 145px;
+    }
+    
+    .img-example-1 {
+        top: 333px;
+        left: 124px;
+    }
+    
+    .img-example-1 > img {
+        width: 145px;
+    }
+    
+    .img-dashboard {
+        top: 430px;
+        right: 124px;
+    }
+    
+    .img-dashboard > img {
+        width: 331px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .works-examples {
+        height: 993px;
+        margin-top: 162px;
+    }
+    
+    .img-chat-crm {
+        left: 228px;
+        top: 92px;
+    }
+    
+    .img-chat-crm > img {
+        width: 555px;
+    }
+    
+    .img-example-3 {
+        right: 217px;
+    }
+    
+    .img-example-3 > img {
+        width: 244px;
+    }
+    
+    .img-example-2 {
+        top: 260px;
+        right: -74px;
+    }
+    
+    .img-example-2 > img {
+        width: 244px;
+    }
+    
+    .img-example-4 {
+        top: 315px;
+        left: -74px;
+    }
+    
+    .img-example-4 > img {
+        width: 244px;
+    }
+    
+    .img-example-1 {
+        top: 494px;
+        left: 203px;
+    }
+    
+    .img-example-1 > img {
+        width: 244px;
+    }
+    
+    .img-dashboard {
+        top: 653px;
+        right: 202px;
+    }
+    
+    .img-dashboard > img {
+        width: 555px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .works-examples {
+        height: 1433px;
+        margin-top: 207px;
+    }
+    
+    .img-chat-crm {
+        left: 373px;
+        top: 136px;
+    }
+    
+    .img-chat-crm > img {
+        width: 802px;
+    }
+    
+    .img-example-3 {
+        right: 343px;
+    }
+    
+    .img-example-3 > img {
+        width: 353px;
+    }
+    
+    .img-example-2 {
+        top: 372px;
+        right: -74px;
+    }
+    
+    .img-example-2 > img {
+        width: 353px;
+    }
+    
+    .img-example-4 {
+        top: 453px;
+        left: -74px;
+    }
+    
+    .img-example-4 > img {
+        width: 353px;
+    }
+    
+    .img-example-1 {
+        top: 712px;
+        left: 337px;
+    }
+    
+    .img-example-1 > img {
+        width: 353px;
+    }
+    
+    .img-dashboard {
+        top: 947px;
+        right: 322px;
+    }
+    
+    .img-dashboard > img {
+        width: 802px;
+    }
+}

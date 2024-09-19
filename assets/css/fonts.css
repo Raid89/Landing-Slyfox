@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'URWGeometric';
+    src: url('/assets/fonts/URWGeometricRegular.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url('/assets/fonts/URWGeometricSemibold.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url('/assets/fonts/URWGeometricExtraBold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url('/assets/fonts/URWGeometricHeavy.otf') format('opentype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url('/assets/fonts/URWGeometricBlack.otf') format('opentype');
+    font-weight: 900    ;
+}
+
+body, p, h1 {
+    font-family: 'URWGeometric', sans-serif;
+}
