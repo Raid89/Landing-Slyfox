@@ -10,6 +10,10 @@ body {
     color: #15242F
 }
 
+button{
+    color: #15242F !important;
+}
+
 section {
     padding: 0px 31px;
 }
