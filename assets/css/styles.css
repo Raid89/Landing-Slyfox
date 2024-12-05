@@ -7,6 +7,7 @@ body {
     cursor: url('../icons/zorro.svg'), default;
     max-width: 1980px;
     margin: auto;
+    color: #15242F
 }
 
 section {
