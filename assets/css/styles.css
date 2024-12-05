@@ -1,9 +1,12 @@
 :root {
     font-size: 10px;
+    color: #15242F;
 }
 
 body {
     cursor: url('../icons/zorro.svg'), default;
+    max-width: 1980px;
+    margin: auto;
 }
 
 section {
@@ -58,4 +61,17 @@ section {
     header {
         padding: 0px 84px;
     }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF7070;
+    border-radius: 4px;
 }

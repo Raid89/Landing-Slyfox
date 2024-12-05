@@ -1,0 +1,165 @@
+.products-container {
+    text-align: center;
+    margin-top: 40px;
+    color: #15242F;
+}
+
+.products-container .product-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.products-container .product-description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 29px;
+    line-height: normal;
+}
+
+.avatar-message-container {
+    background-color: #F4F4F4;
+    border-radius: 8px;
+    display: none;
+    gap: 42.631px;
+    align-items: center;
+    position: relative;
+}
+
+.avatar-container {
+    display: flex;
+    gap: 11px;
+    padding: 13px 22px;
+}
+
+.arrow-avatar {
+    position: absolute;
+}
+
+.name-avatar {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.name-avatar .nickName {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.message {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .products-container .product-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+        margin-top: 74px;
+    }
+
+    .products-container .product-description {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 25px;
+        line-height: normal;
+    }
+
+
+    .avatar-message-container {
+        display: flex;
+    }
+
+    .arrow-avatar {
+        bottom: -40%;
+        left: 19%;
+        transform: scale(.7);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .products-container .product-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 117px;
+    }
+
+    .products-container .product-description {
+        font-size: 28px;
+        margin-bottom: 25px;
+        line-height: normal;
+    }
+
+    .products-container .product-description.secondary {
+        font-size: 18px;
+    }
+
+    .name-avatar {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .name-avatar .nickName {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .message {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .arrow-avatar {
+        bottom: -40%;
+        left: 13%;
+        transform: scale(.8);
+    }
+
+    .avatar-message-container {
+        gap: 76px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .products-container .product-title {
+        font-size: 46px;
+        margin-bottom: 20px;
+        margin-top: 150px;
+    }
+
+    .products-container .product-description {
+        font-size: 28px;
+        margin-bottom: 25px;
+        line-height: normal;
+    }
+
+    .products-container .product-description.secondary {
+        font-size: 28px;
+    }
+
+    .name-avatar {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .name-avatar .nickName {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .message {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .arrow-avatar {
+        bottom: -40%;
+        left: 12%;
+        transform: scale(1);
+    }
+
+    .avatar-message-container {
+        gap: 105px;
+    }
+}

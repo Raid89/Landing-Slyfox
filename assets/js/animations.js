@@ -268,3 +268,26 @@ const scaleUpAnimation = (target) => {
 };
 
 animatedDivs.forEach(div => observer.observe(div));
+
+// Animacion de la seccion de faq
+
+document.addEventListener("DOMContentLoaded", () => {
+  const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const answer = question.nextElementSibling;
+      const isOpen = answer.style.maxHeight;
+
+      // Cierra todas las demás respuestas
+      document.querySelectorAll(".faq-answer").forEach((otherAnswer) => {
+        otherAnswer.style.maxHeight = null;
+        otherAnswer.style.marginBottom = null;
+      });
+
+      // Alterna la respuesta actual
+      answer.style.maxHeight = isOpen ? null : answer.scrollHeight + "px";
+      answer.style.marginBottom = isOpen ? null : 15 + "px";
+    });
+  });
+});

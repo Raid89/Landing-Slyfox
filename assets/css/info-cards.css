@@ -1,0 +1,228 @@
+.information-cards {
+    margin-top: 70px;
+    position: relative;
+}
+
+.info-cards__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    overflow-x: hidden;
+}
+
+.info-cards__card {
+    border-radius: 20px;
+    background: #F5F5F8;
+    padding: 10px;
+    display: grid;
+    gap: 6px;
+}
+
+.info-card__card-tag {
+    font-size: 12px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    border-radius: 10px;
+    background: #FFF;
+    width: fit-content;
+}
+
+.info-card__card-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.75px;
+    padding: 10px;
+}
+
+.info-card__item-list {
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    padding: 7.5px;
+    color: #585858;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14.4px;
+}
+
+.info-card__item-list::before {
+    content: "";
+    width: 24px;
+    max-width: 12px;
+    height: 12px;
+    max-height: 12px;
+    background-image: url(../icons/purple-zap.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-card__item-list::before {
+    content: "";
+    width: 24px;
+    max-width: 12px;
+    height: 12px;
+    max-height: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-card__item-list.purple::before {
+    background-image: url(../icons/purple-zap.svg);
+}
+
+.info-card__item-list.pink::before {
+    background-image: url(../icons/pink-zap.svg);
+}
+
+[class^="info-card__image-container"] {
+    display: none;
+}
+
+.scroll-buttons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.scroll-button.scroll-left,
+.scroll-button.scroll-right {
+    position: static;
+    top: auto;
+    transform: none;
+    left: auto;
+    right: auto;
+}
+
+/* Hide scrollbar in WebKit browsers */
+.info-cards__container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar in Firefox */
+.info-cards__container {
+    scrollbar-width: none;
+}
+
+@media screen and (min-width: 768px) {
+    .info-cards__container {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 45px;
+        max-width: 100%;
+        overflow: hidden; /* Hide scrollbar */
+    }
+
+    .info-cards__card {
+        min-width: 600px;
+        width: 600px;
+        padding: 14px;
+    }
+
+    .info-card__card-title {
+        font-size: 30px;
+        padding: 0px 10px;
+        margin-bottom: 22px;
+    }
+
+    .info-card__item-list {
+        font-size: 14px;
+    }
+
+    [class^="info-card__image-container"] {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 326.701px;
+        overflow: hidden;
+    }
+
+    .info-card__image-container__second {
+        display: flex;
+    }
+
+    [class^="info-card__image-container"] > .image-asp {
+        width: 502.433px;
+        height: 326.701px;
+        right: -26px;
+        bottom: -55px;
+        position: absolute;
+    }
+
+    [class^="info-card__image-container"] > .image-pato {
+        width: 390px;
+        margin: auto
+    }
+    
+    .scroll-button {
+        display: block; /* Show scroll buttons */
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .scroll-button.scroll-left {
+        left: 10px;
+    }
+
+    .scroll-button.scroll-right {
+        right: 10px;
+    }
+
+    /* Hide scrollbar in WebKit browsers */
+    .info-cards__container::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar in Firefox */
+    .info-cards__container {
+        scrollbar-width: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info-cards__container {
+        overflow-x: scroll;
+    }
+
+    .scroll-buttons {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .info-cards__container {
+        overflow-x: scroll;
+    }
+
+    .scroll-buttons {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .info-cards__card {
+        min-width: 800px;
+        width: 800px;
+        padding: 18px;
+        height: 678px;
+    }
+
+    .info-card__card-title {
+        padding: 0px 14px;
+        font-size: 46px;
+    }
+
+    .info-card__item-list {
+        font-size: 16px;
+    }
+}
