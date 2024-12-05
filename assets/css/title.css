@@ -21,6 +21,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .main-title-container{
+        margin-top: 10rem;
+    }
+
     .mt-title {
         font-size: 5rem;
         font-style: normal;
@@ -53,6 +57,10 @@
 }
 
 @media screen and (min-width: 1920px) {
+    .main-title-container{
+        margin-top: 20rem;
+    }
+    
     .mt-title {
         font-size: 9.6rem;
         font-style: normal;
