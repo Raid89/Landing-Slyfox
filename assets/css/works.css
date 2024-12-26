@@ -6,6 +6,19 @@
     position: relative;
 }
 
+.img-logo {
+    transform: scale(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+
+.img-logo > img {
+    width: 120px;
+}
+
+
 .img-chat-crm {
     position: absolute;
     left: 68px;
@@ -81,7 +94,15 @@
         height: 629px;
         margin-top: 150px;
     }
-    
+
+    .img-logo {
+        top: 61%;
+    }
+
+    .img-logo > img {
+        width: 150px;
+    }
+
     .img-chat-crm {
         left: 138px;
         top: 95px;
@@ -142,6 +163,14 @@
         margin-top: 162px;
     }
     
+    .img-logo {
+        top: 55%;
+    }
+
+    .img-logo > img {
+        width: 220px;
+    }
+
     .img-chat-crm {
         left: 228px;
         top: 92px;
@@ -200,6 +229,14 @@
     .works-examples {
         height: 1433px;
         margin-top: 207px;
+    }
+
+    .img-logo {
+        top: 55%;
+    }
+
+    .img-logo > img {
+        width: 260px;
     }
     
     .img-chat-crm {

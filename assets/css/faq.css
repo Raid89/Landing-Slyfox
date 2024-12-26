@@ -92,6 +92,10 @@
     color: #555;
 }
 
+.faq-answer p {
+    line-height: 28px;
+}
+
 @media screen and (min-width: 768px) {
     .faq-section {
         margin-top: 74px;
