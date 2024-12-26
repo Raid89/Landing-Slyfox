@@ -1,0 +1,14 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Custom error pages
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
