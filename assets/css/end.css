@@ -13,7 +13,7 @@
     font-weight: 700;
     line-height: 12.913px;
     border-radius: 91.825px;
-    background: #FFF;
+    background: var(--bg-btn);
     padding: 15px;
     border: 1px solid #d5d5d5;
     width: 170.109px;

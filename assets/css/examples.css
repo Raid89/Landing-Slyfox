@@ -1,5 +1,5 @@
 .text-transform {
-    color: #FF7070;
+    color: var(--primary-red);
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
@@ -10,7 +10,7 @@
 }
 
 .text-contact {
-    color: #696969;
+    color: var(--primary-text-color-light);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;

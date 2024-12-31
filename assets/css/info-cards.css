@@ -14,9 +14,10 @@
 
 .info-cards__card {
     border-radius: 20px;
-    background: #F5F5F8;
+    background: var(--bg-avatar-card);
     padding: 10px;
     display: grid;
+    overflow: hidden;
     gap: 6px;
 }
 
@@ -27,7 +28,7 @@
     font-weight: 600;
     line-height: 12px;
     border-radius: 10px;
-    background: #FFF;
+    background: var(--background-color);
     width: fit-content;
 }
 
@@ -45,7 +46,7 @@
     align-items: center;
     gap: 7.5px;
     padding: 7.5px;
-    color: #585858;
+    color: var(--secondary-text-color);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -138,6 +139,8 @@
         display: block;
         position: relative;
         width: 100%;
+        bottom: -8%;
+        left: 4%;
         height: 326.701px;
         overflow: hidden;
     }
@@ -152,6 +155,7 @@
         right: -26px;
         bottom: -55px;
         position: absolute;
+        border-radius: 18px;
     }
 
     [class^="info-card__image-container"] > .image-pato {
@@ -215,6 +219,7 @@
         width: 800px;
         padding: 18px;
         height: 678px;
+        overflow: hidden;
     }
 
     .info-card__card-title {

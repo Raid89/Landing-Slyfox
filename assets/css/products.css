@@ -1,7 +1,7 @@
 .products-container {
     text-align: center;
     margin-top: 40px;
-    color: #15242F;
+    color: var(--primary-text-color);
 }
 
 .products-container .product-title {
@@ -18,7 +18,7 @@
 }
 
 .avatar-message-container {
-    background-color: #F4F4F4;
+    background-color: var(--bg-avatar-card);
     border-radius: 8px;
     display: none;
     gap: 42.631px;

@@ -1,21 +1,35 @@
 :root {
     font-size: 10px;
-    color: #15242F;
+    color: var(--primary-text-color);
+}
+
+.text-resalted {
+    color: var(--primary-red);
+}
+
+.text-resalted-secondary {
+    color: var(--primary-purple);
 }
 
 body {
     cursor: url('../icons/zorro.svg'), default;
     max-width: 1980px;
     margin: auto;
-    color: #15242F
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+    padding-top: 30px;
 }
 
 button{
-    color: #15242F !important;
+    color: var(--btn-text-color) !important;
 }
 
 section {
     padding: 0px 31px;
+}
+
+* {
+    transition: all 0.3s;
 }
 
 .btn {
@@ -27,7 +41,7 @@ section {
     align-items: flex-start;
     border: none;
     border-radius: 87px;
-    background-color: white;
+    background-color: var(--bg-btn);
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -77,6 +91,22 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #FF7070;
+    background-color: var(--primary-red);
     border-radius: 4px;
+}
+
+body .white-mode {
+    display: block;
+}
+
+body .dark-mode {
+    display: none;
+}
+
+body.dark-mode .white-mode {
+    display: none;
+}
+
+body.dark-mode .dark-mode {
+    display: block;
 }

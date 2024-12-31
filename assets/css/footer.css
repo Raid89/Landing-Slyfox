@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 12px 31px;
-    background-color: #F0F2F6;
+    background-color: var(--bg-footer);
     margin-top: 190px;
 }
 
@@ -31,7 +31,7 @@ footer>.networks {
     }
 
     footer>p {
-        color: #000;
+        color: var(--primary-text-color);
         font-size: 12px;
         font-style: normal;
         font-weight: 700;

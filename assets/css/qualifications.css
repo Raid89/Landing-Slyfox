@@ -24,7 +24,7 @@
 }
 
 .qc-text {
-    color: #282626;
+    color: var(--primary-text-color);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;

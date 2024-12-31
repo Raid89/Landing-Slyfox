@@ -14,6 +14,7 @@
     <meta name="author" content="Slyfox">
     <meta name="theme-color" content="#15242F">
 
+    <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -55,17 +56,19 @@
 <body>
     <div class="body-padding">
         <header style="padding: 0px 31px;">
-            <img src="assets/icons/logo.webp" alt="Logotipo De Slyfox" class="h-logo">
-            <div class="h-button-dark-mode" aria-label="Toggle dark mode">
+            <img src="assets/icons/logo.webp" alt="Logotipo de Slyfox" class="h-logo white-mode">
+            <img src="assets/icons/logo-dark.png" alt="Logotipo de Slyfox" class="h-logo dark-mode">
+            <div class="h-button-dark-mode" id="dark-mode-toggle" aria-label="Toggle dark mode">
                 <div class="h-bdm-icon-container">
-                    <img src="assets/icons/sun.svg" alt="Icono de sol">
+                    <img src="assets/icons/sun.svg" alt="Icono de sol" class="logo-header white-mode">
+                    <img src="assets/icons/moon.svg" alt="Icono de luna" class="logo-header dark-mode">
                 </div>
             </div>
         </header>
 
         <section class="main-title-container">
             <h1 class="mt-title" id="mt-title-typed-text">
-                Lo Hacemos Por ti.
+                Lo Hacemos Por Ti.
             </h1>
             <p class="mt-subtitle" id="mt-subtitle-typed-text">
                 Convierte Tus Ideas en Experiencias Digitales Cautivadoras:
@@ -98,7 +101,7 @@
         </section>
 
         <div class="principal-button-container">
-            <button class="btn btn-principal" style="margin: auto; color: #15242F;" aria-label="Contactenos">Contactenos</button>
+            <button class="btn btn-principal" style="margin: auto; color: #15242F;" aria-label="Contáctenos">Contáctenos</button>
         </div>
 
         <section class="proyects-examples">
@@ -123,7 +126,8 @@
 
         <section class="works-examples">
             <div class="img-logo animate-app-exp">
-                <img src="assets/icons/logo.webp" alt="Logo de Slyfox">
+                <img src="assets/icons/logo.webp" alt="Logo de Slyfox" class="white-mode">
+                <img src="assets/icons/logo-dark.png" alt="Logo de Slyfox" class="dark-mode">
             </div>
 
             <div class="img-chat-crm animate-app-exp">
@@ -173,9 +177,9 @@
                         WEB APPS
                     </div>
                     <p class="info-card__card-title">
-                        <span style="color: #FF7070">¡</span>
+                        <span class="text-resalted">¡</span>
                         <span>Convierte Tu Visión en Plataformas Digitales que Inspiran Acción</span>
-                        <span style="color: #5137F0">!</span>
+                        <span class="text-resalted-secondary">!</span>
                     </p>
                     <ul class="info-card__list">
                         <li class="info-card__item-list pink">Desarrollo de aplicaciones web personalizadas para satisfacer las necesidades únicas de su negocio.</li>
@@ -193,15 +197,15 @@
                         DISEÑO UX/UI
                     </div>
                     <p class="info-card__card-title">
-                        <span style="color: #FF7070">¡</span>
+                        <span class="text-resalted">¡</span>
                         <span>Atrae a tus Usuarios con Experiencias Móviles Impactantes: Diseño de Apps que Fidelizan y Sorprenden</span>
-                        <span style="color: #5137F0">!</span>
+                        <span class="text-resalted-secondary">!</span>
                     </p>
                     <ul class="info-card__list">
                         <li class="info-card__item-list purple">Diseño de interfaces de usuario intuitivas y atractivas para una experiencia óptima del usuario.</li>
-                        <li class="info-card__item-list purple">Experiencia del usuario y el diseño de interfaces intuitivas y atractivas</li>
+                        <li class="info-card__item-list purple">Experiencia del usuario y el diseño de interfaces intuitivas y atractivas.</li>
                         <li class="info-card__item-list purple">Consultoría estratégica para ayudarlo a definir sus objetivos tecnológicos y desarrollar una estrategia efectiva.</li>
-                        <li class="info-card__item-list purple">Research ux</li>
+                        <li class="info-card__item-list purple">Research UX.</li>
                     </ul>
 
                     <div class="info-card__image-container__second">
@@ -226,7 +230,7 @@
                     <p class="product-description">
                         Potencia tu crecimiento con nosotros. Desarrollo web, diseño UX/UI en un solo lugar.
                         Páginas de destino irresistibles que generan conversiones.
-                        <br><span style="color: #FF7070">¡Únete a nuestro éxito!</span>
+                        <br><span class="text-resalted">¡Únete a nuestro éxito!</span>
                     </p>
                 </div>
 
@@ -237,9 +241,9 @@
                     </p>
                     <div class="avatar-message-container">
                         <div class="avatar-container">
-                            <img src="assets/images/avatar-cristian.png" alt="Avatar de Cristian Suarez" class="avatar-image">
+                            <img src="assets/images/avatar-cristian.png" alt="Avatar de Cristian Suárez" class="avatar-image">
                             <div class="name-avatar">
-                                <span style="font-weight: 600;">Cristian Suarez</span>
+                                <span style="font-weight: 600;">Cristian Suárez</span>
                                 <br>
                                 <span class="nickName">@Zerausdesigner</span>
                             </div>
@@ -258,9 +262,9 @@
                     </p>
                     <div class="avatar-message-container">
                         <div class="avatar-container">
-                            <img src="assets/images/avatar-nicolas.png" alt="Avatar de Nicolas Castellanos" class="avatar-image">
+                            <img src="assets/images/avatar-nicolas.png" alt="Avatar de Nicolás Castellanos" class="avatar-image">
                             <div class="name-avatar">
-                                <span style="font-weight: 600;">Nicolas Castellanos</span>
+                                <span style="font-weight: 600;">Nicolás Castellanos</span>
                                 <br>
                                 <span class="nickName">@RaidDevbrain</span>
                             </div>
@@ -276,13 +280,13 @@
         <section class="faq-section">
             <div class="title-faq">
                 <img src="assets/icons/zorro.svg" alt="Avatar zorro">
-                <h2>Preguntas? <br> Respuestas.</h2>
+                <h2>¿Preguntas? <br> Respuestas.</h2>
                 <div class="faq-avatar-card">
                     <div class="avatar-container">
                         <img src="assets/icons/zorro.svg" alt="Avatar zorro">
                     </div>
                     <h2>Soy un ser humano como tú, ¡pregúntame cualquier cosa!</h2>
-                    <button style="color: #15242F;" aria-label="Preguntame">Preguntame!</button>
+                    <button style="color: #15242F;" aria-label="Pregúntame">Pregúntame!</button>
                 </div>
             </div>
 
@@ -344,19 +348,19 @@
                     <img src="assets/icons/zorro.svg" alt="Avatar zorro">
                 </div>
                 <h2>Soy un ser humano como tú, ¡pregúntame cualquier cosa!</h2>
-                <button style="color: #15242F;" aria-label="Preguntame">Preguntame!</button>
+                <button style="color: #15242F;" aria-label="Pregúntame">Pregúntame!</button>
             </div>
         </section>
 
         <section class="end-section">
             <p>
-                Lo que nos <span style="color: #FF7070">diferencia</span> es que lo <br>
-                <span style="color: #FF7070">hacemos</span> con <span style="color: #FF7070">amor</span>
+                Lo que nos <span class="text-resalted">diferencia</span> es que lo <br>
+                <span class="text-resalted">hacemos</span> con <span class="text-resalted">amor</span>
             </p>
 
-            <img src="assets/icons/hearht.svg" alt="icono de corazon palpitante">
+            <img src="assets/icons/hearht.svg" alt="icono de corazón palpitante">
 
-            <button style="color: #15242F;" aria-label="Contactenos">Contactenos</button>
+            <button style="color: #15242F;" aria-label="Contáctenos">Contáctenos</button>
         </section>
     </div>
 
@@ -365,16 +369,17 @@
         <p>©2024. Todos los derechos reservados.</p>
         <img onclick="scrollToTop()" class="footer-arrow" src="assets/icons/footer-arrow.png" alt="Flecha hacia arriba">
         <div class="networks">
-            <img src="assets/icons/twitter-outline.svg" alt="twitter" title="Twitter">
-            <img src="assets/icons/linkedin-outline.svg" alt="linkedin" title="LinkedIn">
-            <img src="assets/icons/behance-outline.svg" alt="behance" title="Behance">
-            <img src="assets/icons/github-outline.svg" alt="github" title="GitHub">
-            <img src="assets/icons/facebook-outline.svg" alt="facebook" title="Facebook">
+            <img src="assets/icons/twitter-outline.svg" alt="Twitter" title="Twitter">
+            <img src="assets/icons/linkedin-outline.svg" alt="LinkedIn" title="LinkedIn">
+            <img src="assets/icons/behance-outline.svg" alt="Behance" title="Behance">
+            <img src="assets/icons/github-outline.svg" alt="GitHub" title="GitHub">
+            <img src="assets/icons/facebook-outline.svg" alt="Facebook" title="Facebook">
         </div>
     </footer>
     <script src="assets/js/typewriter.js"></script>
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </body>
 

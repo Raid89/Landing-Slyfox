@@ -10,7 +10,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    color: #5137F0;
+    color: var(--primary-purple);
 }
 
 .empowereds-image {

@@ -1,0 +1,31 @@
+body {
+    --background-color: #fff;
+    --primary-red: #FF7070;
+    --primary-purple: #5137F0;   
+    --primary-text-color: #15242F; 
+    --secondary-text-color: #555; 
+    --primary-text-color-light: #696969;
+    --bg-avatar-card: #F5F5F8;
+    --bg-avatar-container: #FFF;
+    --bg-footer: #F0F2F6;
+    --bg-button-dark-mode: #E8E7E7;
+    --bg-icon-dark-mode: #979797;
+    --bg-btn: #FFF;
+    --btn-text-color: #15242F;
+}
+
+body.dark-mode {
+    --background-color: #161A20;
+    --primary-red: #FF7070;
+    --primary-purple: #5137F0;   
+    --primary-text-color: #F4F4F4; 
+    --secondary-text-color: #D3D3D3; 
+    --primary-text-color-light: #696969;
+    --bg-avatar-card: rgba(217, 217, 217, 0.10);;
+    --bg-avatar-container: rgba(217, 217, 217, 0.30);
+    --bg-footer: rgba(217, 217, 217, 0.10);
+    --bg-button-dark-mode: #D9D9D91A;
+    --bg-icon-dark-mode: #231F20;
+    --bg-btn: #D9D9D9;
+    --btn-text-color: #15242F;
+}
