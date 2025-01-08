@@ -12,6 +12,8 @@ body {
     --bg-icon-dark-mode: #979797;
     --bg-btn: #FFF;
     --btn-text-color: #15242F;
+    --input-boder: #7C8C9D;
+    --input-background: rgb(255, 255, 255);
 }
 
 body.dark-mode {
@@ -28,4 +30,6 @@ body.dark-mode {
     --bg-icon-dark-mode: #231F20;
     --bg-btn: #D9D9D9;
     --btn-text-color: #15242F;
+    --input-boder: #9197B3;
+    --input-background: #2a2d33;
 }

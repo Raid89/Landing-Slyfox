@@ -1,0 +1,206 @@
+.form-container {
+    background-image: url('/assets/images/form-bg.webp');
+    background-size: cover;
+    display: flex;
+    width: 100%;
+}
+
+.form-container>div {
+    width: 50%;
+}
+
+form {
+    max-width: 420px;
+    margin: auto;
+    margin-top: 9vh;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-text-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.332px;
+    letter-spacing: 0.167px;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+h5 {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+h6 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.332px;
+    letter-spacing: 0.167px;
+}
+
+input,
+textarea {
+    border: 1.238px solid var(--input-boder);
+    border-radius: 4.166px;
+    padding: 6px 8px;
+    background: var(--input-background);
+    color: var(--primary-text-color);
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--input-boder);
+}
+
+.form-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 85.9vh;
+}
+
+.form-image h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61.902px;
+    /* 123.803% */
+    letter-spacing: -0.891px;
+    text-align: center;
+    padding-top: 12%;
+}
+
+section {
+    padding: 0px 0px 0px 31px;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Oculta el input nativo */
+.custom-checkbox input {
+    display: none;
+}
+
+/* Estilo del checkbox estilizado */
+.custom-checkbox .checkbox {
+    width: 12px;
+    /* Tamaño del checkbox */
+    height: 12px;
+    border: 2px solid #5137F0;
+    /* Borde morado */
+    border-radius: 3px;
+    /* Esquinas redondeadas */
+    background-color: white;
+    box-shadow: 0 0 2px rgba(126, 63, 242, 0.4);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Estilo del check (chulito) */
+.custom-checkbox .checkbox::after {
+    content: '';
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 4px;
+    /* Ancho del "chulito" */
+    height: 8px;
+    /* Altura del "chulito" */
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* Cuando el checkbox está marcado */
+.custom-checkbox input:checked+.checkbox {
+    background-color: #5137F0;
+    /* Fondo morado */
+    box-shadow: 0 0 5px rgba(126, 63, 242, 0.6);
+}
+
+.custom-checkbox input:checked+.checkbox::after {
+    opacity: 1;
+    /* Muestra el chulito */
+}
+
+/* Espaciado y estilo del texto */
+.custom-checkbox .label-text {
+    margin-top: 2.5px;
+    margin-left: 8px;
+    /* Espaciado entre el checkbox y el texto */
+    font-size: 14px;
+    /* Tamaño del texto */
+    color: var(--primary-text-color);
+    /* Color gris del texto */
+    font-weight: 500;
+}
+
+.form-group-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-button {
+    width: 100%;
+    color: #FFF !important;
+    margin: 20px 0px;
+    background-color: #5137F0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13.764px;
+    /* 98.315% */
+    letter-spacing: 0.125px;
+    border: none;
+    padding: 5px;
+}
+
+@media (max-width: 1150px) {
+    .form-container {
+        display: block;
+    }
+
+    .form-container>div {
+        width: 100%;
+    }
+
+    form {
+        max-width: none;
+    }
+
+    .form-image {
+        display: none;
+
+    }
+
+    section {
+        padding: 0px 37px;
+    }
+
+    .form-group-checkbox {
+        width: 100%;
+    }
+
+    .form-container {
+        background-image: none;
+    }	
+}
