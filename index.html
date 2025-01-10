@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/end.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Slyfox - Desarrollamos tus ideas</title>
     <script type="application/ld+json">
@@ -101,7 +102,7 @@
         </section>
 
         <div class="principal-button-container">
-            <button class="btn btn-principal" style="margin: auto; color: #15242F;" aria-label="Contáctenos" onclick="window.location.href='/contacto'">Contáctenos</button>
+            <button class="btn btn-principal" style="margin: auto; color: #15242F;" aria-label="Contáctenos" onclick="openDialog('contacto/index.html')">Contáctenos</button>
         </div>
 
         <section class="proyects-examples">
@@ -286,7 +287,7 @@
                         <img src="assets/icons/zorro.svg" alt="Avatar zorro">
                     </div>
                     <h2>Soy un ser humano como tú, ¡pregúntame cualquier cosa!</h2>
-                    <button style="color: #15242F;" aria-label="Pregúntame" onclick="window.location.href='/contacto'">Pregúntame!</button>
+                    <button style="color: #15242F;" aria-label="Pregúntame" onclick="openDialog('contacto/index.html')">Pregúntame!</button>
                 </div>
             </div>
 
@@ -348,7 +349,7 @@
                     <img src="assets/icons/zorro.svg" alt="Avatar zorro">
                 </div>
                 <h2>Soy un ser humano como tú, ¡pregúntame cualquier cosa!</h2>
-                <button style="color: #15242F;" aria-label="Pregúntame" onclick="window.location.href='/contacto'">Pregúntame!</button>
+                <button style="color: #15242F;" aria-label="Pregúntame" onclick="openDialog('contacto/index.html')">Pregúntame!</button>
             </div>
         </section>
 
@@ -360,7 +361,7 @@
 
             <img src="assets/icons/hearht.svg" alt="icono de corazón palpitante">
 
-            <button style="color: #15242F;" aria-label="Contáctenos" onclick="window.location.href='/contacto'">Contáctenos</button>
+            <button style="color: #15242F;" aria-label="Contáctenos" onclick="openDialog('contacto/index.html')">Contáctenos</button>
         </section>
     </div>
 
@@ -376,11 +377,20 @@
             <img src="assets/icons/facebook-outline.svg" alt="Facebook" title="Facebook">
         </div>
     </footer>
+
+    <div id="dialog-contact" class="dialog-contact-background ">
+        <div class="dialog-bg">
+            <div id="dialog-content"></div>
+        </div>
+    </div>
     <script src="assets/js/typewriter.js"></script>
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    </style>
 </body>
+
+
 
 </html>

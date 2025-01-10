@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.animate-app-exp {
+    transform: scale(0);
+}
+
 .img-logo {
     transform: scale(1);
     position: absolute;

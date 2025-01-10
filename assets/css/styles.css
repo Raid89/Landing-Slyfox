@@ -29,7 +29,10 @@ section {
 }
 
 * {
-    transition: all 0.3s;
+    transition: color 0.3s;
+    transition: background 0.3s;
+    transition: background-color 0.3s;
+    transition: opacity 0.3s;
 }
 
 .btn {

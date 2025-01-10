@@ -25,8 +25,42 @@ function scrollToTop() {
     });
 }
 
+function openDialog(filePath) {
+    fetch(filePath)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('dialog-content').innerHTML = html;
+            document.getElementById('dialog-contact').style.display = 'flex';
+            setTimeout(() =>
+            document.getElementById('dialog-contact').style.opacity = '1', 100)
+        })
+        .catch(error => console.error('Error al cargar el archivo:', error));
+}
+
+function closeDialog() {
+    document.getElementById('dialog-contact').style.opacity = '0'
+    setTimeout(() => document.getElementById('dialog-contact').style.display = 'none', 300)
+    
+}
+
+document.getElementById('dialog-contact').addEventListener('click', function(event) {
+    if (event.target.id === 'dialog-contact') {
+        closeDialog();
+    }
+});
+
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'Escape') {
+        closeDialog();
+    }
+});
 
 let isScrolling;
+
+window.addEventListener('scroll', function() {
+    document.body.classList.add('scrolling');
+    // ...existing code...
+});
 
 window.addEventListener('scroll', function() {
     document.body.classList.add('scrolling');

@@ -250,10 +250,13 @@ const satisfieddCustomers = () => {
 // Animaciones de los ejemplos de aplicaciones
 const animatedDivs = document.querySelectorAll('.animate-app-exp');
 
+
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+
+  entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
       scaleUpAnimation(entry.target)
+      observer.unobserve(entry.target);
     }
   });
 });
@@ -263,7 +266,8 @@ const scaleUpAnimation = (target) => {
     targets: target,
     scale: [0, 1],
     duration: 1000,
-    easing: 'easeOutQuad'
+    easing: 'easeOutQuad',
+    fill: 'forwards'
   });
 };
 
